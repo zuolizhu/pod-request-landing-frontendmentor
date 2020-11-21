@@ -18,6 +18,10 @@
   line-height: 2.5rem;
   color: var(--color-light-blue);
   font-weight: var(--weight-light);
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
 }
 
 .t-error {
