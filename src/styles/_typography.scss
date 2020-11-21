@@ -1,0 +1,22 @@
+.t-title {
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  text-transform: uppercase;
+  font-weight: var(--weight-light);
+  @media (min-width: 768px) {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+  }
+}
+
+.t-cyan {
+  color: var(--color-cyan);
+}
+
+.t-white {
+  color: var(--color-white);
+}

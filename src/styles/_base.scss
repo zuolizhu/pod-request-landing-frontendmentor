@@ -1,0 +1,42 @@
+:root {
+  // colors
+  --color-white: #fff;
+  --color-bg: #121725;
+  --color-cyan: #54E6AF;
+
+  // Font Weights
+  --weight-light: 300;
+  --weight-bold: 700;
+
+  // Design Elements
+  --transition: 300ms ease-in-out;
+}
+
+// reset
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'Chivo', sans-serif;
+  background-color: var(--color-bg);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  border: none;
+  background-color: none;
+  font-family: 'Chivo', sans-serif;
+}
