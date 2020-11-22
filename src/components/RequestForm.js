@@ -34,7 +34,7 @@ export default function RequestForm() {
          value={formik.values.email}
          placeholder="Email address"
        />
-       {formik.errors.email ? <p className="t-error">{formik.errors.email}</p> : null}
+       {formik.errors.email ? <p className="t-error error-msg">{formik.errors.email}</p> : null}
        <button className="btn btn--request" type="submit">Request Access</button>
      </form>
   )

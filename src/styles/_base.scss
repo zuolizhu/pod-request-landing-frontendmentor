@@ -64,3 +64,11 @@ input {
 input:focus {
   outline: none;
 }
+
+#root {
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

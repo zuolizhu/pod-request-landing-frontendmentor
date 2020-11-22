@@ -16,11 +16,6 @@ function App() {
         <Platforms />
         <RequestForm />
       </div>
-
-      <p>
-
-      Request access
-      </p>
     </div>
   );
 }
