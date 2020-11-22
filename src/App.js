@@ -15,15 +15,15 @@ function App() {
   const pageTitleRef = useRef(null);
 
 
-  useEffect(() => {
-    const timeline = gsap.timeline();
-    timeline.fromTo(logoRef.current, { opacity: 0, y: '50%' }, { opacity: 1, y: '0%', duration: 0.5 });
-    timeline.fromTo(pageTitleRef.current, { opacity: 0, y: '50%' }, { opacity: 1, y: '0%', duration: 1 });
-    timeline.fromTo(pageBodyRef.current, { opacity: 0, x: '15%' }, { opacity: 1, x: '0%', duration: 1 }, "-=0.5");
-    timeline.fromTo(formRef.current, { opacity: 0, x: '-15%' }, { opacity: 1, x: '0%', duration: 1 }, "-=0.5");
-    timeline.fromTo(platformRef.current, { opacity: 0, x: '5%' }, { opacity: 1, x: '0%', duration: 1 }, "-=0.5");
+  // useEffect(() => {
+  //   const timeline = gsap.timeline();
+  //   timeline.fromTo(logoRef.current, { opacity: 0, y: '50%' }, { opacity: 1, y: '0%', duration: 0.5 });
+  //   timeline.fromTo(pageTitleRef.current, { opacity: 0, y: '50%' }, { opacity: 1, y: '0%', duration: 1 });
+  //   timeline.fromTo(pageBodyRef.current, { opacity: 0, x: '15%' }, { opacity: 1, x: '0%', duration: 1 }, "-=0.5");
+  //   timeline.fromTo(formRef.current, { opacity: 0, x: '-15%' }, { opacity: 1, x: '0%', duration: 1 }, "-=0.5");
+  //   timeline.fromTo(platformRef.current, { opacity: 0, x: '5%' }, { opacity: 1, x: '0%', duration: 1 }, "-=0.5");
 
-  }, []);
+  // }, []);
   return (
     <div className="App">
       <div ref={logoRef} className="logo">
