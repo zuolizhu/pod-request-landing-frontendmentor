@@ -1,5 +1,6 @@
 .App {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,6 +16,7 @@
   @media (min-width: 1366px) {
     width: 88.542%;
     max-height: 64rem;
+    overflow: visible;
     padding: 13.1rem 0 0;
     background-size: auto 100%;
     background-image: url(../assets/desktop/image-host.jpg);

@@ -4,9 +4,9 @@ import applePodcast from '../assets/desktop/apple-podcast.svg';
 import googlePodcasts from '../assets/desktop/google-podcasts.svg';
 import pocketCasts from '../assets/desktop/pocket-casts.svg';
 
-export default function Platforms() {
+export default function Platforms({ platformRef }) {
   return (
-    <div className="platforms">
+    <div ref={platformRef} className="platforms">
       <div className="platform platform--spotify">
         <img src={spotify} alt="platform logo"/>
       </div>

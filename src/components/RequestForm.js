@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 
-export default function RequestForm() {
+export default function RequestForm({ formRef }) {
 
   const validate = values => {
     const errors = {};
@@ -24,7 +24,7 @@ export default function RequestForm() {
   });
 
   return (
-    <form className="request-form" onSubmit={formik.handleSubmit}>
+    <form ref={formRef} className="request-form" onSubmit={formik.handleSubmit}>
        <label className="sr-only" htmlFor="email">Email Address</label>
        <input
          id="email"
