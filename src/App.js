@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
+// import { useEffect, useRef } from 'react';
 import './App.scss';
 import PageTitle from './components/PageTitle';
 import logo from './assets/desktop/logo.svg';
 import Platforms from './components/Platforms';
 import RequestForm from './components/RequestForm';
-import gsap from 'gsap';
+// import gsap from 'gsap';
 
 function App() {
 
