@@ -12,7 +12,7 @@
     background-position: top right;
     background-image: url(../assets/tablet/image-host.jpg);
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
     width: 88.542%;
     max-height: 64rem;
     padding: 13.1rem 0 0;
@@ -33,7 +33,7 @@
       background-repeat: no-repeat;
       background-image: url(../assets/desktop/bg-pattern-dots.svg);
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1366px) {
       left: auto;
       right: 0;
       transform: translateY(50%);
@@ -47,7 +47,7 @@
   @media (min-width: 768px) {
     justify-content: flex-start;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
     top: 0;
     left: 0;
     position: absolute;
@@ -74,10 +74,11 @@
     flex-direction: column;
     background-color: var(--color-black);
   }
-  @media (min-width: 1024px) {
-    margin-top: 0;
+  @media (min-width: 1366px) {
     height: 100%;
+    margin-top: 0;
     width: 56.706%;
+    padding-top: 8.8rem;
   }
 }
 
@@ -96,12 +97,14 @@
     margin-top: 3rem;
     width: 70.079%;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
     margin-top: 2.4rem;
+    max-width: 44.5rem;
   }
 }
 
 .platforms {
+  opacity: .50;
   display: flex;
   padding: 0 .6rem;
   overflow: hidden;
@@ -113,6 +116,9 @@
     padding: 0;
     margin-top: 6.4rem;
     justify-content: flex-start;
+  }
+  @media (min-width: 1366px) {
+    margin-top: auto;
   }
 
   .platform {
@@ -176,8 +182,9 @@
     position: relative;
     flex-direction: row;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
     margin-top: 4rem;
+    max-width: 42.7rem;
   }
 
   &__email {
@@ -224,12 +231,18 @@
 }
 
 .btn--request {
+  cursor: pointer;
+  padding: .9rem 0;
   font-size: 1.4rem;
   text-align: center;
-  padding: .9rem 0;
   line-height: 2.8rem;
   border-radius: 2.8rem;
   color: var(--color-black);
   font-weight: var(--weight-bold);
   background-color: var(--color-cyan);
+  transition: var(--transition) background-color;
+
+  &:hover {
+    background-color: #B3FFE2;
+  }
 }
