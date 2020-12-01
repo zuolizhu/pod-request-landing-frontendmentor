@@ -66,7 +66,9 @@
 }
 
 .content-container {
+  z-index: 2;
   margin-top: auto;
+  position: relative;
   @media (min-width: 768px) {
     display: flex;
     width: 82.682vw;
